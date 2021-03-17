@@ -1,12 +1,12 @@
 import './post-add-form.scss';
 
-const PostAddForm = () => {
+const PostAddForm = ({onAdd}) => {
     const placeholder = 'О чем вы думаете сейчас?';
     return (
-        <form action="" className="bottom-panel d-flex">
+        <div action="" className="bottom-panel d-flex">
             <input type="text" placeholder={placeholder} className="form-control new-post-label"/>
-            <button className="btn btn-outline-secondary" type="submit">Добавить</button>
-        </form>
+            <button onClick={() => onAdd('Hello!')} className="btn btn-outline-secondary" type="submit">Добавить</button>
+        </div>
     )
 }
 
