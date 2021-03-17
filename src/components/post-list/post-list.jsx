@@ -1,4 +1,5 @@
 import PostListItem from "../post-list-item/post-list-item";
+import { ListGroup } from "react-bootstrap";
 
 import './post-list.scss';
 
@@ -14,9 +15,9 @@ const PostList = ({posts}) => {
     })
 
     return (
-        <ul className='app-list list-group'>
+        <ListGroup className='app-list'>
             {elements}
-        </ul>
+        </ListGroup>
     )
 }
 
